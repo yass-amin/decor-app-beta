@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decor App Beta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Onboarding -->
+  <div id="onboarding">
+    <h2>Choose Property Type</h2>
+    <button onclick="chooseType('residential')">Residential</button>
+    <button onclick="chooseType('commercial')">Commercial</button>
+  </div>
+
+  <!-- Swipe Deck -->
+  <div id="swipe-deck" class="hidden">
+    <h2>Swipe on Designs</h2>
+    <div id="card-container"></div>
+    <div class="buttons">
+      <button onclick="swipe('left')">👎</button>
+      <button onclick="swipe('right')">👍</button>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div id="results" class="hidden">
+    <h2>Your Style Preference</h2>
+    <p id="preference-text"></p>
+    <div id="gallery"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
